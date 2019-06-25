@@ -105,19 +105,22 @@ var wordsUnique = [
   'playground',
   'poison',
   'communion',
-  //'simple',
-  //'bring'
+  'simple',
+  'bring'
 ];
-/*
-function uniquifyArray (wordsUnique){
-  if (wordsUnique.length === 0) {
+
+function uniquifyArray (arr){
+  if (arr.length === 0) {
     return undefined;
   }
   var newArr = [];
-  for (var i = wordsUnique[wordsUnique.length-1]; i >= 0; i--) {
-    if (wordsUnique[])
+  for (var i = arr.length-1; i >= 0; i--) {
+    if (arr.indexOf(arr[i]) === i) {
+      newArr.unshift(arr[i])
+    } 
   }
-*/
+  return newArr;
+}
 // Finding Elements
 var wordsFind = [
   'machine',
